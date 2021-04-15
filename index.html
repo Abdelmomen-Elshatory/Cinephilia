@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinephilia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="images/Babasse-Old-School-Old-videos.ico"/>
+</head>
+<body>
+
+    <div id="loading-wrapper">
+        <div id="loading-text"></div>
+        <div id="loading-content"></div>
+    </div>
+    <div class="movies-types">
+        <div class="types popular">
+            <div onclick="goToCategory(this)" class="popular overlay" data-type="popular"><a onclick="goToCategory(this)" class="link" data-type="popular" href="javascript:void(0)"></a></div>
+            <img onclick="goToCategory(this)" class="category-img hvr-grow" src="" data-type="popular" alt="">
+        </div>
+        <div class="types now-playing">
+            <div onclick="goToCategory(this)" class="now-playing overlay" data-type="now_playing"><a onclick="goToCategory(this)" class="link" data-type="now_playing" href="javascript:void(0)"></a></div>
+            <img onclick="goToCategory(this)" class="category-img hvr-grow" src="" data-type="now_playing" alt="">
+        </div>
+        <div class="types upcoming">
+            <div onclick="goToCategory(this)" class="upcoming overlay" data-type="upcoming"><a onclick="goToCategory(this)" class="link" data-type="upcoming" href="javascript:void(0)"></a></div>
+            <img onclick="goToCategory(this)" class="category-img hvr-grow" src="" data-type="upcoming" alt="">
+        </div>
+        <div class="types top-rated">
+            <div onclick="goToCategory(this)" class="top-rated overlay" data-type="top_rated"><a onclick="goToCategory(this)" class="link" data-type="top_rated" href="javascript:void(0)"></a></div>
+            <img onclick="goToCategory(this)" class="category-img hvr-grow" src="" data-type="top_rated" alt="">
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.js"></script>
+</body>
+</html>

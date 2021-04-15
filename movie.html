@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinephilia - Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/lightgallery.min.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/Babasse-Old-School-Old-videos.ico"/>
+</head>
+
+<body>
+    <div id="loading-wrapper">
+        <div id="loading-text"></div>
+        <div id="loading-content"></div>
+    </div>
+
+    <div id="movieInformation" class="movie-information">
+        <div class="home button back">
+            <apan class="noselect"><i class="fas fa-long-arrow-alt-left"></i></apan>
+            <a onclick="goBack()" class="circle"></a>
+        </div>
+
+        <div class="information-content">
+            <div class="poster-movie-container">
+                <img class="poster-movie" src="" alt="">
+            </div>
+            <div class="information">
+                <h3 class="title-movie"></h3>
+                <p>
+                    <span class="date-movie"></span> |
+                    <span class="maturity-number"></span> |
+                    <span class="time-movie"></span> |
+                    <span class="language-movie"></span>
+                </p>
+                <p class="overview-movie"></p>
+                <div class="viste-url">
+                    <a class="btn btn-primary main-url" href="">Homepage</a>
+                    <a class="btn btn-primary imdb" href="">IMDB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="videos">
+        <h3 class="video-tag">Videos | <span class="span-tag"></span></h3>
+        <div class="videos-content">
+        </div>
+    </div>
+
+    <div class="photos">
+        <h3 class="photo-tag">Photos | <span class="span-tag-photo"></span></h3>
+        <div class="photo-content">
+            <!-- <div id="lightgallery">
+
+            </div> -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators"></ol>
+                <div class="carousel-inner"></div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="production-companies">
+        <hr>
+        <h2>Production Companies</h2>
+        <hr>
+        <div class="companies"></div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.plyr.io/3.6.4/plyr.polyfilled.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/lightgallery-all.min.js"></script> -->
+    <script>
+        const player = new Plyr('.player', {
+            title: 'Example Title',
+        });
+    </script>
+    <script src="js/plugin.js"></script>
+</body>
+
+</html>
