@@ -6,7 +6,7 @@
     background-image: url(../images/main-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: fit-content;
+    height: 100vh;
     padding: 55px 30px;
 }
 
