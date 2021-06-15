@@ -35,7 +35,7 @@ function getMoviePoster(movieType, callback) {
         url: `https://api.themoviedb.org/3/movie/${movieType}?api_key=${apiKey}`,
         type: 'GET',
         success: function (data) {
-            callback(data.results[i].poster_path)
+            callback(data.results[9].poster_path)
         }
     })
 }
